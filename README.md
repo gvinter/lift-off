@@ -1,7 +1,7 @@
-This is my own flavor of a starting point for new projects that require responsiveness.
+This is my own flavor of a starting point for new projects that require responsiveness. Bootstrap-SASS, H5BP, Compass.
 
 
-##### Get Started:
+#### Get Started:
 - clone repo
 - configure libraries in variables desired in `css/main.sass` 
 - configure Bootstrap libraries desired in `js/plugins.js`
@@ -26,5 +26,6 @@ I'm a fan of [The Guadrian's SASS-MQ]((https://github.com/guardian/sass-mq/)) li
 - [Compass](http://compass-style.org/)
 - [SASS](http://sass-lang.com/)
 
+##### TODOs
 - TODO: write README with command to create compass project w/o extra .css files.
-- TODO: add grunt to compile JS libraries
+- TODO: add Grunt to compile JS libraries
