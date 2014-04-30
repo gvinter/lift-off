@@ -8,10 +8,10 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          compass: true
+          compass: false
         },
         files: {
-          'main-<%= pkg.version %>.css': 'main.sass'
+          'main-<%= pkg.version %>.css': 'css/main.sass'
         }
       }
     },
@@ -29,10 +29,8 @@ module.exports = function(grunt) {
 
     // Watch
     watch: {
-      compass: {
-        files: ['**/*.{scss,sass}'],
-        tasks: ['compass']
-      },
+      files: 'css/main.sass',
+      tasks: 'sass',
       js: {
         files: ['**/*.js'],
         tasks: ['uglify']
