@@ -1,4 +1,4 @@
-This is my own flavor of a starting point for new projects that require responsiveness. Bootstrap-SASS, H5BP, Compass.
+This is my own flavor of a starting point for new projects that require responsiveness. Bootstrap-SASS, H5BP, Hologram.
 
 
 #### Get Started:
@@ -13,9 +13,12 @@ This is my own flavor of a starting point for new projects that require responsi
 - Add the Grunt task for watching file updates: `npm install grunt-contrib-watch --save-dev`
 - Run `grunt watch`.
 
-##### Dependancies:
-- Compass 0.12.4
-- SASS 3.3.2+
+
+#### Add Style Guide
+- Install [Hologram](https://github.com/trulia/hologram#installation)
+- Run `hologram init`
+- Run `hologram` each time you want to compile the docs
+- Note: If you want to commit the docs to a new repo, take `/docs` out the .gitignore
 
 
 ##### SASS-MQ instead of RespondJS
@@ -27,11 +30,11 @@ I'm a fan of [The Guadrian's SASS-MQ]((https://github.com/guardian/sass-mq/)) li
 - [Initializr](http://www.initializr.com/)
 - [Bootstrap](http://www.getbootstrap.com/)
 - [SASS-MQ](https://github.com/guardian/sass-mq/)
-- [Compass](http://compass-style.org/)
 - [Sass](http://sass-lang.com/)
 - [Grunt Sass](https://github.com/gruntjs/grunt-contrib-sass)
+- [Hologram](http://github.com/trulia/hologram)
+
 
 ##### TODOs
-- TODO: write README with command to create compass project w/o extra .css files.
 - TODO: add Grunt to compile JS libraries
 - TODO: add Bootstrap as a Grunt task instead of having it in vendor library

@@ -1,0 +1,282 @@
+// 
+// NOTE: This CSS is used in the main style sheet, so it better be what you really use on your site!
+// 
+
+//generic list styles
+ul.ul
+  padding-left: 30px
+
+  &:first-child
+    margin-top: 0
+
+.list-clean
+  list-style: none
+  padding-left: 0
+
+//doc
+
+ ---
+ title: Inline Lists
+ name: Inline Lists
+ category: Base CSS
+ ---
+
+ ```html_example
+ <ul class="list-inline">
+   <li>Pancakes
+   <li>French Toast
+   <li>Breakfast Burritos
+   <li>Hot dogs
+ </ul>
+
+ ```
+
+.list-inlined
+  display: inline-block
+  margin: 0
+  padding: 0
+  list-style: none
+  li
+    padding: 0
+    margin-left: .8em
+    display: inline-block
+
+  li:first-child
+    margin-left: 0
+
+//doc
+
+ ---
+ title: Media Block
+ name: blocks
+ category: Base CSS
+ ---
+
+ ```html_example
+ <div class="media">
+   <a href="http://twitter.com/stubbornella" class="image">
+     <img src="http://fillmurray.com/100/100" alt="Not actually a picture of Nicole Sullivan" />
+   </a>
+
+   <div class="body">
+     <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">
+       How to media block
+     </a>
+     <br>@Stubbornella 14 minutes ago
+   </div>
+ </div>
+ ```
+
+.media
+  margin: 10px
+
+  &, .body
+    overflow: hidden
+    _overflow: visible
+    zoom: 1
+
+  .image
+    float: left
+    margin-right: 10px
+
+  .imageExt
+    float: right
+    margin-left: 10px
+
+//doc
+ ---
+ title: Buttons
+ name: buttons
+ category: Base CSS
+ ---
+
+ ```html_example
+ <a class="btn">Hi</a>
+ <button class="btn btn-primary">Click me!</button>
+ ```
+.butn
+  border: 1px solid darken(blue, 30%)
+  background-color: darken(blue, 10%)
+  border-radius: 4px
+  font-size: 18px
+  font-family: "Open Sans", Helvetica, Arial, sans-serif
+  line-height: 1.4em
+  padding: 2px 7px 3px 7px
+  color: red
+  display: inline-block
+  box-shadow: 0 2px 0 0 darken(blue, 30%)
+  cursor: pointer
+
+  &:active
+    position: relative
+    top: 1px
+    box-shadow: 0 1px 0 0 darken(blue, 30%)
+
+  &:hover
+    text-decoration: none
+
+
+button.butn
+  padding: 1px 7px 2px 7px
+
+  &:active
+    position: relative
+    top: 1px
+
+.butn-primary
+  border-color: lighten(green, 7%)
+  background-color: lighten(desaturate(green, 30%), 20%)
+  color: red
+  box-shadow: 0 2px 0 0 lighten(green, 7%)
+
+  &:active
+    box-shadow: 0 1px 0 0 lighten(green, 7%)
+
+
+//doc
+ ---
+ title: Touch Table
+ name: touch_Table
+ category: Javascript
+ ---
+
+ This is used for displaying links in a list that can be touched
+ anywhere on a touch device to visit the link
+
+ ```html_example
+ <ul class="touch touch-table">
+   <li>
+     <a>Hello</a>
+     <a>Goodbye</a>
+   </li>
+   <li>
+     <a>Pancakes</a>
+     <a>Waffles</a>
+   </li>
+ </ul>
+
+ <ul class="touch touch-list">
+   <li><a href="http://google.com">Hello</a></li>
+   <li>
+     <a>
+       Goodbye
+       <span>Please come again</span>
+     </a>
+   </li>
+   <li><a>Yar</a></li>
+ </ul>
+ ```
+
+.touch
+  padding: 0
+  margin: 0
+  list-style: none
+  width: 100%
+
+  a
+    font-weight: 300
+    padding: .5em 0
+
+    &:hover
+      background-color: red
+      text-decoration: none
+
+    span
+      font-size: 12px
+      display: block
+      color: red
+      line-height: 1.2em
+
+
+.touch-table
+  display: table
+
+  li
+    display: table-row
+
+    & > span
+      display: table-cell
+      vertical-align: middle
+
+  a
+    display: table-cell
+    vertical-align: middle
+
+.touch-list
+  a
+    display: block
+    width: 100%
+
+//doc
+ ---
+ title: Flexslider
+ name: Flexslider
+ category: Components
+ ---
+
+ This is used for displaying links in a list that can be touched
+ anywhere on a touch device to visit the link
+
+ ```html_example
+ <ul class="touch touch-table">
+   <li>
+     <a>Hello</a>
+     <a>Goodbye</a>
+   </li>
+   <li>
+     <a>Pancakes</a>
+     <a>Waffles</a>
+   </li>
+ </ul>
+
+ <ul class="touch touch-list">
+   <li><a href="http://google.com">Hello</a></li>
+   <li>
+     <a>
+       Goodbye
+       <span>Please come again</span>
+     </a>
+   </li>
+   <li><a>Yar</a></li>
+ </ul>
+ ```
+
+.touch
+  padding: 0
+  margin: 0
+  list-style: none
+  width: 100%
+
+  a
+    font-weight: 300
+    padding: .5em 0
+
+    &:hover
+      background-color: red
+      text-decoration: none
+
+    span
+      font-size: 12px
+      display: block
+      color: red
+      line-height: 1.2em
+
+
+.touch-table
+  display: table
+
+  li
+    display: table-row
+
+    & > span
+      display: table-cell
+      vertical-align: middle
+
+  a
+    display: table-cell
+    vertical-align: middle
+
+.touch-list
+  a
+    display: block
+    width: 100%
