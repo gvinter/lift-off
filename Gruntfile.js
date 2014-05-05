@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'css/main.css': 'css/main.sass'
+          'public/main.min.css': 'css/main.sass'
         }
       }
     },
@@ -22,9 +22,16 @@ module.exports = function(grunt) {
       options: {
         banner: '/*! main.js <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
-      build: {
-        src: 'js/main.js',
-        dest: 'build/main.min.js'
+      js: {
+        files: {
+          'build/main.min.js': [
+            'js/*.js',
+            'bower_components/jquery/src/jquery.js',
+            'bower_components/holderjs/holder.js',
+            'bower_components/instantclick/instantclick.js',
+            'bower_components/sass-bootstrap/js/*.js'
+          ]
+        }
       }
     },
 
@@ -33,7 +40,6 @@ module.exports = function(grunt) {
       files: 'css/main.sass',
       tasks: 'sass',
       js: {
-        files: ['**/*.js'],
         tasks: ['uglify']
       }
     }
