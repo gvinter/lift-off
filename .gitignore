@@ -1,5 +1,6 @@
 node_modules
 .sass-cache
+package.json
 .DS_Store
 /docs
 /build/*

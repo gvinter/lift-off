@@ -8,11 +8,10 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          compass: false,
           style: 'compressed'
         },
         files: {
-          'css/main.css': 'css/main.sass'
+          'public/main.css': 'css/main.sass'
         }
       }
     },
@@ -24,27 +23,34 @@ module.exports = function(grunt) {
       },
       build: {
         src: 'js/main.js',
-        dest: 'build/main.min.js'
+        dest: 'public/js/main.min.js'
       }
     },
 
     // Watch
     watch: {
-      files: 'css/main.sass',
-      tasks: 'sass',
+      // options: {
+      //   livereload: true
+      // },
+      sass: {
+        files: 'css/**/*.sass',
+        tasks: ['sass']
+      },
       js: {
-        files: ['**/*.js'],
+        files: ['js/main.js'],
         tasks: ['uglify']
       }
+      
     }
 
-  
   });
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-uglify');  
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', [
+    'watch'
+  ]);
 };

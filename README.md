@@ -2,23 +2,22 @@ This is my own flavor of a starting point for new projects that require responsi
 
 
 #### Get Started:
-- Clone repo
+1. Clone repo
+- Add Grunt CLI to the project. `cd` into root directory and run `npm install -g grunt-cli` (assuming you have 'npm' installed).
+<!-- - Install Grunt `npm install -g grunt-init`
+- Create a `package.json` file: `npm init`
+- `npm install grunt --save-dev` -->
+- Add the Grunt task for compiling Sass: `npm install grunt-contrib-sass --save-dev`
+- Add the Grunt task for Uglifying JS files: `npm install grunt-contrib-uglify`
+- Add the Grunt task for watching file updates: `npm install grunt-contrib-watch --save-dev`
+- Run `grunt watch`
+
+
+#### Add Your Code:
 - Configure libraries in variables desired in `css/main.sass` 
 - Configure Bootstrap libraries desired in `js/plugins.js`
 - Add custom SASS to `css/sass/` files. For example, put home page sass in `_home.sass`. How you organize these files is a matter of preference.
 - Add custom JS to `js/main.js`
-- Add Grunt to the project. `cd` into root directory and run `npm install -g grunt-cli` (assuming you have 'npm' installed).
-- Next we'll add the Grunt task for compiling Sass: `npm install grunt-contrib-sass --save-dev`
-- Add the Grunt task for Uglifying JS files: `npm install grunt-contrib-uglify`
-- Add the Grunt task for watching file updates: `npm install grunt-contrib-watch --save-dev`
-- Run `grunt watch`.
-
-
-#### Add Style Guide
-- Install [Hologram](https://github.com/trulia/hologram#installation)
-- Run `hologram init`
-- Run `hologram` each time you want to compile the docs
-- Note: If you want to commit the docs to a new repo, take `/docs` out the .gitignore
 
 
 ##### SASS-MQ instead of RespondJS
