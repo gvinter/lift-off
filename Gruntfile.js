@@ -4,6 +4,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    // Documentation
+    bulldoc: {
+      docs: {
+        files: { 'docs/build/': 'docs/source/' }
+      }
+    },
+
     // Sass
     sass: {
       dist: {
@@ -13,6 +20,15 @@ module.exports = function(grunt) {
         files: {
           'public/css/main.css': 'css/main.sass'
         }
+      }
+    },
+
+    // Sprites
+    sprite:{
+      all: {
+        src: 'img/sprites/*.png',
+        destImg: 'public/img/sprites.png',
+        destCSS: 'css/base/_sprites.scss'
       }
     },
 
@@ -51,13 +67,19 @@ module.exports = function(grunt) {
       js: {
         files: 'js/**/*.js',
         tasks: ['uglify']
+      },
+      bulldoc: {
+        files: 'docs/**/*.md',
+        tasks: ['bulldoc']
       }
       
     }
 
   });
 
+  grunt.loadNpmTasks('grunt-bulldoc');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
