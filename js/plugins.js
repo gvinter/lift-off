@@ -34,6 +34,7 @@ var Holder=Holder||{};!function(a,b){function c(a,b,c){b=parseInt(b,10),a=parseI
 // 
 // Bootstrap Plugins
 // 
+// (currently being compiled via Grunt.js)
 
 //= require vendor/bootstrap/affix
 //= require vendor/bootstrap/alert
@@ -47,4 +48,3 @@ var Holder=Holder||{};!function(a,b){function c(a,b,c){b=parseInt(b,10),a=parseI
 //= require vendor/bootstrap/modal
 //= require vendor/bootstrap/tooltip
 //= require vendor/bootstrap/popover
-
