@@ -1,0 +1,343 @@
+// Base
+@import "sass/base/_variables"
+@import "sass/base/_fonts"
+
+// Bootstrap: core variables and mixins
+@import "libs/bootstrap/variables"
+@import "libs/bootstrap/mixins"
+
+// Normalize
+@import "libs/bootstrap/normalize"
+
+// Print
+@import "libs/bootstrap/print"
+
+// Dependencies
+@import "libs/bootstrap/glyphicons"
+
+// Bootstrap Core CSS
+@import "libs/bootstrap/scaffolding"
+@import "libs/bootstrap/type"
+@import "libs/bootstrap/code"
+@import "libs/bootstrap/grid"
+@import "libs/bootstrap/tables"
+@import "libs/bootstrap/forms"
+@import "libs/bootstrap/buttons"
+
+// Bootstrap Components
+@import "libs/bootstrap/component-animations"
+@import "libs/bootstrap/dropdowns"
+@import "libs/bootstrap/button-groups"
+@import "libs/bootstrap/input-groups"
+@import "libs/bootstrap/navs"
+@import "libs/bootstrap/navbar"
+@import "libs/bootstrap/breadcrumbs"
+@import "libs/bootstrap/pagination"
+@import "libs/bootstrap/pager"
+@import "libs/bootstrap/labels"
+@import "libs/bootstrap/badges"
+@import "libs/bootstrap/jumbotron"
+@import "libs/bootstrap/thumbnails"
+@import "libs/bootstrap/alerts"
+@import "libs/bootstrap/progress-bars"
+@import "libs/bootstrap/media"
+@import "libs/bootstrap/list-group"
+@import "libs/bootstrap/panels"
+@import "libs/bootstrap/responsive-embed"
+@import "libs/bootstrap/wells"
+@import "libs/bootstrap/close"
+
+// Components w/ JavaScript
+@import "libs/bootstrap/modals"
+@import "libs/bootstrap/tooltip"
+@import "libs/bootstrap/popovers"
+@import "libs/bootstrap/carousel"
+
+// Utility classes
+@import "libs/bootstrap/utilities"
+@import "libs/bootstrap/responsive-utilities"
+
+// Guardian MQ library
+@import "libs/_mq"
+
+///////
+
+
+// Colors
+$white: #fff
+$blue: #5697E2
+$blueDark: #4880C0
+$blueDarken: #112031 // darker $blueDark
+$yellow: #FFD62C
+$grayLight: #e9e9e9
+$black: #333
+
+$link: #368DB9
+$text: #999
+
+@mixin box-shadow($color: #ccc)
+	box-shadow: 0px 1px 1px 0px $color
+
+
+// 
+// General
+// 
+a
+	color: $link
+
+p
+	color: $text
+
+button
+	color: $black
+	background: $yellow
+	border-radius: 5px
+	margin-left: -10px
+	text-transform: uppercase
+	padding: 15px 30px
+	border: none
+	font-weight: bold
+
+// 
+// HEADER
+// 
+
+header
+	padding: 15px 0 8px
+	p.site-logo
+		text-align: center
+		font-weight: 500
+		font-style: italic
+		text-transform: lowercase
+		font-size: 18px
+		a
+			color: $gray-light
+			&:hover
+				text-decoration: none
+		span
+			color: $gray-darker
+			font-weight: 600
+			font-size: 20px
+			text-transform: uppercase
+			font-style: normal
+			margin-right: -3px
+
+
+// 
+// BANNER
+// 
+
+.banner-main
+	background: $blue
+	// +gradient-radial(lighten($blue, 5%), $blue)
+	color: $white
+	text-align: center
+	padding: 80px 0 90px
+	position: relative
+	
+	h1
+		margin: 0
+		font-weight: 300
+		line-height: 55px
+		font-size: 46px
+		font-family: $open-sans
+		span
+			color: $yellow
+	
+	&:after
+		content: ''
+		width: 0
+		height: 0
+		border-left: 25px solid transparent
+		border-right: 25px solid transparent
+		border-top: 16px solid $blue
+		position: absolute
+		bottom: -16px
+		left: 49%
+		z-index: 99999
+	&:before
+		content: ''
+		width: 0
+		height: 0
+		border-left: 25px solid transparent
+		border-right: 25px solid transparent
+		border-top: 16px solid #3768a0
+		position: absolute
+		bottom: -17px
+		left: 49%
+		z-index: 99998
+
+
+// SECONDARY BANNER
+.banner-secondary
+	background: $blueDark
+	padding: 60px 0 30px
+	color: $white
+	position: relative
+	.galen-headshot
+		img
+			width: 200px
+			border: 3px solid $white
+			+box-shadow
+			margin: 0 auto
+			display: block
+			@media screen and (min-width: 768px) and (max-width: 992px)
+				max-width: 140px
+		p
+			text-align: center
+			color: $white
+			font-style: italic
+			font-family: $lato
+			margin-top: 10px
+			font-weight: 300
+			a
+				color: $white
+				border-bottom: 1px solid $white
+				&:hover
+					text-decoration: none
+	
+	@media screen and (max-width: 768px)
+		text-align: center
+	h2
+		margin: 0
+		font: normal 300 28px $lato
+	h3
+		font: normal 300 17px $lato
+		margin-top: 25px
+	form
+		margin-top: 25px
+		padding-bottom: 25px
+		input[type="email"]
+			padding: 15px
+			border-radius: 5px
+			border: none !important
+			box-shadow: none !important
+			width: 430px
+			color: $gray
+			@media screen and (max-width: 600px)
+				width: 90%
+		button
+			@media screen and (max-width: 992px)
+				margin: 15px 0 0 0
+		
+
+.banner-secondary
+	box-shadow: inset 0px 0px 3px #2e5685
+	&:after
+		content: ''
+		width: 0
+		height: 0
+		border-left: 25px solid transparent
+		border-right: 25px solid transparent
+		border-bottom: 16px solid $grayLight
+		position: absolute
+		bottom: -1px
+		left: 49%
+	&:before
+		content: ''
+		width: 0
+		height: 0
+		border-left: 25px solid transparent
+		border-right: 25px solid transparent
+		border-bottom: 16px solid #3768a0
+		position: absolute
+		bottom: 0px
+		left: 49%
+
+// TESTIMONIALS
+.testimonials
+	background: $grayLight
+	padding: 60px 0 90px
+
+	.bubble
+		background: $white
+		border-radius: 5px
+		padding: 25px
+		position: relative
+		+box-shadow
+		blockquote
+			font-size: 16px
+			padding: 0
+			color: #999
+			border: none
+			font-weight: 300
+			line-height: 24px
+		.name
+			color: $black
+			margin: 0
+			font-size: 22px
+		.title
+			color: #999
+			font-weight: 300
+			line-height: 20px
+			font-size: 16px
+		&:after
+			content: ''
+			width: 0
+			height: 0
+			border-left: 20px solid transparent
+			border-right: 20px solid transparent
+			border-top: 16px solid $white
+			position: absolute
+			bottom: -15px
+			left: 44%
+		&:before
+			content: ''
+			width: 0
+			height: 0
+			border-left: 20px solid transparent
+			border-right: 20px solid transparent
+			border-top: 16px solid #ddd
+			position: absolute
+			bottom: -17px
+			left: 44%
+		@media screen and (max-width: 992px)
+			&:before, &:after
+				left: 47%
+		@media screen and (max-width: 480px)
+			&:before, &:after
+				left: 46%
+
+	.headshot
+		img
+			margin: 0 auto
+			display: block
+			margin-top: 30px
+			width: 125px
+			margin-bottom: 30px
+			border: 3px solid #fff
+			+box-shadow
+
+// Cloud separator
+.clouds
+	fill: $white
+	stroke: $white
+	margin-top: -85px
+
+// Footer
+footer
+	text-align: center
+	h3, p, a
+		font-family: $lato
+	
+	h3
+		margin: 30px 0 0
+		font-size: 28px 
+	form
+		margin-top: 25px
+		input[type="email"]
+			padding: 15px
+			width: 430px
+			background: $grayLight
+			border-radius: 5px
+			color: $gray
+			border: none
+
+	.footer-note
+		margin-top: 50px
+		font-size: 18px
+		font-weight: 300
+	.copyright
+		padding-bottom: 60px
+		font-size: 16px
+		font-weight: 300

@@ -3,403 +3,200 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Initializr on Bootstrap</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-    <link rel="stylesheet" href="css/main.css">
-
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
-    <style type="text/css">
-    body {
-      padding-top: 70px;
-      padding-bottom: 30px;
-    }
-
-    .theme-dropdown .dropdown-menu {
-      position: static;
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    .theme-showcase > p > .btn {
-      margin: 5px 0;
-    }
-    </style>
+  <title>The best front-end articles on the web, hand-picked each week - Front-end Dev Weekly</title>
   
-  </head>
+  <meta name="description" content="Vital content for front-end web developers that will keep you current. Emailed to you each week, free.">
   
-  <body>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
   
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- <link rel="pingback" href="{{site.pingback_url}}" /> -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Bootstrap theme</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+  <!-- Schema.org Tags -->
+  <meta itemprop="url" content="http://frontenddevweekly.com" />
+  <meta itemprop="name" content="The best front-end articles on the web, hand-picked each week - Front-end Dev Weekly" />
+  <meta itemprop="email" content="galen.vinter@gmail.com" />
+  <meta itemprop="description" content="Vital content for front-end web developers that will keep you current. Emailed to you each week, free." />
+  <meta itemprop="image" content="img/galen.jpg" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:site_name" content="The best front-end articles on the web, hand-picked each week - Front-end Dev Weekly" />
+  <meta property="og:title" content="Vital content for front-end web developers that will keep you current. Emailed to you each week, free." />
+  <meta property="og:url" content="http://frontenddevweekly.com" />
+  <meta property="og:image" content="img/galen.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  
+</head>
+
+<body>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header>
+    <div class="container">
+      
+      <p class="site-logo"><a href="http://frontenddevweekly.com/"><span>Front-end Dev</span> Weekly</a></p>
+
     </div>
+  </header>
 
-    <div class="container theme-showcase" role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-      </div>
-
-
-
-      <div class="page-header">
-        <h1>Buttons</h1>
-      </div>
-      <p>
-        <button type="button" class="btn btn-lg btn-default">Default</button>
-        <button type="button" class="btn btn-lg btn-primary">Primary</button>
-        <button type="button" class="btn btn-lg btn-success">Success</button>
-        <button type="button" class="btn btn-lg btn-info">Info</button>
-        <button type="button" class="btn btn-lg btn-warning">Warning</button>
-        <button type="button" class="btn btn-lg btn-danger">Danger</button>
-        <button type="button" class="btn btn-lg btn-link">Link</button>
-      </p>
-      <p>
-        <button type="button" class="btn btn-default">Default</button>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-link">Link</button>
-      </p>
-      <p>
-        <button type="button" class="btn btn-sm btn-default">Default</button>
-        <button type="button" class="btn btn-sm btn-primary">Primary</button>
-        <button type="button" class="btn btn-sm btn-success">Success</button>
-        <button type="button" class="btn btn-sm btn-info">Info</button>
-        <button type="button" class="btn btn-sm btn-warning">Warning</button>
-        <button type="button" class="btn btn-sm btn-danger">Danger</button>
-        <button type="button" class="btn btn-sm btn-link">Link</button>
-      </p>
-      <p>
-        <button type="button" class="btn btn-xs btn-default">Default</button>
-        <button type="button" class="btn btn-xs btn-primary">Primary</button>
-        <button type="button" class="btn btn-xs btn-success">Success</button>
-        <button type="button" class="btn btn-xs btn-info">Info</button>
-        <button type="button" class="btn btn-xs btn-warning">Warning</button>
-        <button type="button" class="btn btn-xs btn-danger">Danger</button>
-        <button type="button" class="btn btn-xs btn-link">Link</button>
-      </p>
-
-
-
-      <div class="page-header">
-        <h1>Thumbnails</h1>
-      </div>
-      <img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
-
-
-
-      <div class="page-header">
-        <h1>Dropdown menus</h1>
-      </div>
-      <div class="dropdown theme-dropdown clearfix">
-        <a id="dropdownMenu1" href="#" role="button" class="sr-only dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <li class="active" role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-        </ul>
-      </div>
-
-
-
-
-      <div class="page-header">
-        <h1>Navbars</h1>
-      </div>
-
-      <div class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-
-      <div class="navbar navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-
-
-
-      <div class="page-header">
-        <h1>Alerts</h1>
-      </div>
-      <div class="alert alert-success">
-        <strong>Well done!</strong> You successfully read this important alert message.
-      </div>
-      <div class="alert alert-info">
-        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-      </div>
-      <div class="alert alert-warning">
-        <strong>Warning!</strong> Best check yo self, you're not looking too good.
-      </div>
-      <div class="alert alert-danger">
-        <strong>Oh snap!</strong> Change a few things up and try submitting again.
-      </div>
-
-
-
-      <div class="page-header">
-        <h1>Progress bars</h1>
-      </div>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
-        <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
-        <div class="progress-bar progress-bar-danger" style="width: 10%"><span class='sr-only'>10% Complete (danger)</span></div>
-      </div>
-
-
-
-      <div class="page-header">
-        <h1>List groups</h1>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <ul class="list-group">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">
-              Cras justo odio
-            </a>
-            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-            <a href="#" class="list-group-item">Morbi leo risus</a>
-            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-            <a href="#" class="list-group-item">Vestibulum at eros</a>
-          </div>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-          </div>
-        </div><!-- /.col-sm-4 -->
-      </div>
-
-
-
-      <div class="page-header">
-        <h1>Panels</h1>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="panel panel-success">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="panel panel-warning">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-          <div class="panel panel-danger">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->
-      </div>
-
-
-      <div class="page-header">
-        <h1>Wells</h1>
-      </div>
-      <div class="well">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-      </div>
-
-
-    </div> <!-- /container -->
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
-    <script src="js/plugins.js"></script>
-    <!--<script src="js/vendor/boostrap/plugins.js"></script> -->
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='http://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+  <div class="banner-main">
+    <div class="container">
+      <h1><span>The best front-end articles on the web</span><br />hand-picked each week.</h1>
+    </div>
+  </div>
   
-    <!-- Live Reload for dev mode -->
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-  </body>
+  <div class="banner-secondary">
+    <div class="container">
+    
+      <div class="col-sm-3 col-sm-push-1">
+        
+        <div class="galen-headshot">
+          <img src="img/galen.jpg" class="img-circle" />
+          <p>from <a href="http://galenvinter.com/">Galen Vinter</a></p>
+        </div>
+
+      </div>
+      
+      <div class="col-sm-8 col-sm-push-1">
+      
+        <h2>Subscribe for your weekly email</h2>
+        <h3>Vital content for front-end web developers that will keep you current.<br />Emailed to you each week, for free.</h3>
+
+        <form action='https://frontenddevweekly.curated.co/email_subscribers' id='subscribe-form' method='post'>
+          <input id='subscribe-email' name='publication_email_subscriber[email]' type='email' placeholder="Email Address" />
+          <button>Subscribe</button>
+        </form>
+    
+      </div>
+
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <div class="container">
+      
+      <div class="col-md-4">
+      
+        <div class="testimonial">
+          <div class="bubble">
+            <blockquote>FEDW has made me better at what I do. Whether it's learning new tech, gaining new perspective, or just staying on top of how our community is evolving, this is one of the few newsletters I look forward to reading every week.</blockquote>
+            <p class="name">Jared McDaniel</p>
+            <p class="title">Co-Founder, <a href="http://www.helpscout.net/">HelpScout</a></p>
+          </div>
+          <div class="headshot">
+            <img src="img/jared-mcdaniel.jpg" class="img-circle" />
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-4">
+        
+        <div class="testimonial">
+          <div class="bubble">
+            <blockquote>I’m much more of an iOS developer than I am a web developer so Front End Dev Weekly keeps me on top of what’s happening in that area without me having to spend hours keeping up on stuff myself.</blockquote>
+            <p class="name">Dave Verwer</p>
+            <p class="title">Creator, <a href="http://iosdevweekly.com/">iOS Dev Weekly</a> <br />Partner, <a href="http://shinydevelopment.com/">Shiny Development</a></p>
+          </div>
+          <div class="headshot">
+            <img src="img/dave-verwer.jpg" class="img-circle" />
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-4">
+      
+        <div class="testimonial">
+          <div class="bubble">
+            <blockquote>One of my secrets to keeping up with front-end dev news is FrontEndDevWeekly.com.</blockquote>
+            <p class="name">Craig McKeachie</p>
+            <p class="title">Host, <a href="http://frontendcast.com/">FrontendCast.com</a> <br />Author, <a href="http://www.funnyant.com/javascript-framework-guide/">Javascript Framework Guide</a></p>
+          </div>
+          <div class="headshot">
+            <img src="img/craig-mckeachie.jpg" class="img-circle" />
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+
+  <svg class="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M-5 100 Q 0 20 5 100 Z
+             M0 100 Q 5 0 10 100
+             M5 100 Q 10 30 15 100
+             M10 100 Q 15 10 20 100
+             M15 100 Q 20 30 25 100
+             M20 100 Q 25 -10 30 100
+             M25 100 Q 30 10 35 100
+             M30 100 Q 35 30 40 100
+             M35 100 Q 40 10 45 100
+             M40 100 Q 45 50 50 100
+             M45 100 Q 50 20 55 100
+             M50 100 Q 55 40 60 100
+             M55 100 Q 60 60 65 100
+             M60 100 Q 65 50 70 100
+             M65 100 Q 70 20 75 100
+             M70 100 Q 75 45 80 100
+             M75 100 Q 80 30 85 100
+             M80 100 Q 85 20 90 100
+             M85 100 Q 90 50 95 100
+             M90 100 Q 95 25 100 100
+             M95 100 Q 100 15 105 100 Z">
+        </path>
+      </svg>
+
+  <footer>
+    <div class="container">
+      <h3>What are you waiting for?</h3>
+      <form action='https://frontenddevweekly.curated.co/email_subscribers' id='subscribe-form' method='post'>
+        <input id='subscribe-email' name='publication_email_subscriber[email]' type='email' placeholder="Email Address" />
+        <button>Subscribe</button>
+      </form>
+
+      <p class="footer-note">Questions, comments, concerns? <a href="http://twitter.com/gvinter/">@gvinter</a> or <a href="mailto:galen.vinter@gmail.com">galen.vinter@gmail.com</a> or <a href="https://plus.google.com/116931805134572854700/" rel="publisher">Google+</a></p>
+      <p class="copyright">©2014 Front-end Dev Weekly</p>
+    </div>
+  </footer>
+
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49243039-1', 'frontenddevweekly.com');
+  ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(100729820);
+  (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+  </script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100729820ns.gif" /></p></noscript>
+  
+</body>
 </html>
